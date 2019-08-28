@@ -51,7 +51,7 @@ export const handleChange = (e) => dispatch=>{
 
 export const getPortfolio =(e)=> dispatch => {
   // e.preventDefault()
-  fetch(`https://investiversity-backend.herokuapp.com//portfolio/show_all?user_id=${id}`)
+  fetch(`https://investiversity-backend.herokuapp.com/portfolio/show_all?user_id=${id}`)
     .then(res => res.json())
     .then(data => {
       // console.log(data)
@@ -61,7 +61,7 @@ export const getPortfolio =(e)=> dispatch => {
 
 
 // export const getUserWithId =()=> dispatch => {
-//   fetch(`https://investiversity-backend.herokuapp.com//users/${id}`)
+//   fetch(`https://investiversity-backend.herokuapp.com/users/${id}`)
 //   .then(res => res.json())
 //   .then(data => { 
 //     console.log('user', data)
@@ -83,7 +83,7 @@ export const handleSignUp=(e)=> dispatch => {
     email: e.target.email.value
   }
  
-  fetch('https://investiversity-backend.herokuapp.com//users',{
+  fetch('https://investiversity-backend.herokuapp.com/users',{
     method:'POST',
     headers:{
       'Content-Type': 'application/json',
@@ -123,7 +123,7 @@ export const handleSignUp=(e)=> dispatch => {
  export const  handleLogin =(e, user,history) => dispatch=> {
   e.preventDefault()
 
-  fetch('https://investiversity-backend.herokuapp.com//login', {
+  fetch('https://investiversity-backend.herokuapp.com/login', {
     method: 'POST',
     headers:{
       'Content-Type': 'application/json', 
@@ -181,7 +181,7 @@ export const buyStock = (e, eachStock, balance)=> dispatch=> {
     invested_balance: balance.invested_balance + stock.total_price
   }
   
-  fetch(`https://investiversity-backend.herokuapp.com//portfolios`,{
+  fetch(`https://investiversity-backend.herokuapp.com/portfolios`,{
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -190,7 +190,7 @@ export const buyStock = (e, eachStock, balance)=> dispatch=> {
       body: JSON.stringify({portfolio: stock})
     })
   
-    fetch(`https://investiversity-backend.herokuapp.com//users/${id}`,{
+    fetch(`https://investiversity-backend.herokuapp.com/users/${id}`,{
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -214,7 +214,7 @@ export const buyStock = (e, eachStock, balance)=> dispatch=> {
 // export const persistData =()=> dispatch=>{
 //   console.log('running')
 
-//   fetch(`https://investiversity-backend.herokuapp.com//users/${id}`)
+//   fetch(`https://investiversity-backend.herokuapp.com/users/${id}`)
 //   .then(res => res.json())
 //   .then(data=> 
 //     {console.log(data)
@@ -255,7 +255,7 @@ export const  sellStock = (e, eachStock,balance)=> dispatch=> {
     invested_balance: balance.invested_balance + stock.total_price
   }
   
-  fetch(`https://investiversity-backend.herokuapp.com//portfolios`,{
+  fetch(`https://investiversity-backend.herokuapp.com/portfolios`,{
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -264,7 +264,7 @@ export const  sellStock = (e, eachStock,balance)=> dispatch=> {
       body: JSON.stringify({portfolio: stock})
     })
 
-    fetch(`https://investiversity-backend.herokuapp.com//users/${id}`,{
+    fetch(`https://investiversity-backend.herokuapp.com/users/${id}`,{
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",

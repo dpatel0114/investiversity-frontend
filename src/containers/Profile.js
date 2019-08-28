@@ -22,7 +22,7 @@ export class Profile extends Component {
 
 
 componentDidMount(){
-  fetch(`https://investiversity-backend.herokuapp.com//users/${localStorage.uid}`)
+  fetch(`https://investiversity-backend.herokuapp.com/users/${localStorage.uid}`)
   .then(res => res.json())
   .then(data => 
       {this.setState({editUser: data.user})
@@ -48,7 +48,7 @@ componentDidMount(){
         username: e.target.username.value
       }
 
-      fetch(`https://investiversity-backend.herokuapp.com//users/${localStorage.getItem('uid')}`, { 
+      fetch(`https://investiversity-backend.herokuapp.com/users/${localStorage.getItem('uid')}`, { 
         method: 'PATCH', 
         body: JSON.stringify({user: newUser}),
         headers: {

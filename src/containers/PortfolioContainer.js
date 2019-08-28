@@ -16,7 +16,7 @@ class  PortfolioContainer extends Component {
   }
 
 componentDidMount(){
-  fetch(`https://investiversity-backend.herokuapp.com//portfolio/my_portfolio/${localStorage.getItem('uid')}`)
+  fetch(`https://investiversity-backend.herokuapp.com/portfolio/my_portfolio/${localStorage.getItem('uid')}`)
   .then(res=> res.json())
   .then(data => {
     // console.log(data)
