@@ -1,0 +1,110 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.App-header {
+  background: url('welcome3.jpg') no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.scrollbar {
+  height:700px;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  /* width:10px; */
+}
+
+
+/* .scroll{
+  height: 400px;
+  overflow-y: scroll;
+  overflow-x: scroll;
+} */
+
+.table {
+  text-align: center;
+  float: none;
+  border-radius: 5px;
+  align: center
+}
+
+.chart {
+  background-color: 'white';
+}
+    
+/* .modal-header {
+  background-color: rgb(140, 212, 182);
+  background-color: rgb(172, 209, 181);
+  color: black;
+} */
+
+/* .btn-primary {
+  background-color: #06AED5;
+  border-color: #06AED5;
+}
+
+.btn-primary:hover {
+  background-color: #058CAA;
+  border-color: #058CAA;
+} */
+
+/* .jumbotron {
+  margin: 0;
+}
+
+.general {
+  background: linear-gradient(to right, rgba(240, 238, 237, 0.5), rgba(250, 248, 248, 0.5)), url('stock.jpg') no-repeat center center;
+  background-size: cover;
+  position: relative
+} */
+
+/* .modal{
+  background-color: #058CAA;
+  border-color: #058CAA;
+} */
+
+/* div.text-center {
+  color: #fff;
+} */
+
+/* .text-muted {
+  color: #fff!important;
+} */
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
