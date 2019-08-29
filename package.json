@@ -1,5 +1,4 @@
 {
-  
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
@@ -49,8 +48,6 @@
     ]
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-free-webfonts": "^1.0.2"
-
+    "@fortawesome/fontawesome-free": "^5.10.2"
   }
 }
-
