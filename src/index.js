@@ -7,9 +7,7 @@ import store from './store';
 // import 'materialize-css'; // It installs the JS asset only
 // import 'materialize-css/dist/css/materialize.min.css';
 import './bootstrap.min.css'
-import '@fortawesome/fontawesome-free/css/all.css'
-// import 'fontawesome-free/css/all.css'
-
+// import '@fortawesome/fontawesome-free/css/all.css'
 import 'react-notifications/lib/notifications.css';
 
 // import '@blueprintjs/icons/lib/css/blueprint-icons.css'
