@@ -77,7 +77,7 @@ function StockCard(props) {
                 </form>
             </td>
 
-            <td> <i class="fas fa-info-circle fa-lg offset-md-4"  onClick={handleShow}> </i>&nbsp;&nbsp;</td>
+            <td> <i class="fas fa-info-circle fa-lg offset-md-4"  onClick={handleShow}></i>&nbsp;&nbsp;</td>
         
            {/* <MyNotification /> */}
             {/* <td>
